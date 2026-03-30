@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifa Premium – Pacote de Viagem</title>
+    <meta name="description" content="Visualize os números disponíveis, reservados e ocupados da nossa rifa.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1>Rifa <span class="highlight">Ouro</span></h1>
+            <p>Prêmio: Pacote de Viagem ✈️ — Clique em qualquer número para ver os detalhes</p>
+        </header>
+
+        <section class="legend-container">
+            <div class="legend-item">
+                <div class="indicator available"></div>
+                <span>Disponível</span>
+            </div>
+            <div class="legend-item">
+                <div class="indicator reserved"></div>
+                <span>Reservado</span>
+            </div>
+            <div class="legend-item">
+                <div class="indicator occupied"></div>
+                <span>Comprado</span>
+            </div>
+        </section>
+
+        <main class="numbers-grid" id="numbers-grid">
+            <div class="loading">Carregando números...</div>
+        </main>
+    </div>
+
+    <!-- Modal de Informações -->
+    <div class="modal-overlay" id="info-modal">
+        <div class="modal">
+            <button class="close-btn" id="close-modal">&times;</button>
+
+            <div class="modal-header">
+                <h2>Número <span id="modal-number" class="highlight"></span></h2>
+                <span id="modal-status" class="modal-badge"></span>
+            </div>
+
+            <div class="modal-info">
+                <div class="info-row" id="row-comprador">
+                    <span class="info-label">👤 Comprador</span>
+                    <span class="info-value" id="modal-comprador"></span>
+                </div>
+                <div class="info-row" id="row-vendedor">
+                    <span class="info-label">🏷️ Vendedor</span>
+                    <span class="info-value" id="modal-vendedor"></span>
+                </div>
+                <div class="info-empty" id="row-empty">
+                    <span>✅ Este número ainda está disponível!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
