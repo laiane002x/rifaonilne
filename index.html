@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rifa Premium – Pacote de Viagem</title>
-    <meta name="description" content="Visualize os números disponíveis, reservados e ocupados da nossa rifa.">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>Ticket da Sorte – Rifa Online</title>
+    <meta name="description" content="Veja os números disponíveis, reservados e comprados da nossa rifa. Concorra a uma super viagem ou R$450 no Pix!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="app-container">
+
+        <!-- HEADER -->
         <header class="header">
-            <h1>Rifa <span class="highlight">Ouro</span></h1>
-            <p>Prêmio: Pacote de Viagem ✈️ — Clique em qualquer número para ver os detalhes</p>
+            <h1>🎟️ TICKET DA SORTE</h1>
+            <p class="sub-title">Rifa Online</p>
+            <div class="prize-banner">
+                Concorra a uma <strong>SUPER VIAGEM</strong> ou <strong>R$450 REAIS NO PIX!!!</strong>
+            </div>
         </header>
 
+        <!-- LEGENDA -->
         <section class="legend-container">
             <div class="legend-item">
                 <div class="indicator available"></div>
@@ -30,9 +38,24 @@
             </div>
         </section>
 
+        <!-- GRADE DE NÚMEROS -->
         <main class="numbers-grid" id="numbers-grid">
             <div class="loading">Carregando números...</div>
         </main>
+
+        <!-- RODAPÉ PIX + VALOR -->
+        <div class="footer-info">
+            <div class="pix-box">
+                <p class="pix-label">Chave Pix</p>
+                <p class="pix-key">(74) 99942-8611</p>
+                <p class="pix-sub">Envie o comprovante via Instagram ou WhatsApp</p>
+            </div>
+            <div class="price-box">
+                <p class="price-label">Valor do Número</p>
+                <p class="price-value">R$ 5,00</p>
+            </div>
+        </div>
+
     </div>
 
     <!-- Modal de Informações -->
