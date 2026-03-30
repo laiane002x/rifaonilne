@@ -489,6 +489,35 @@ body {
 }
 
 /* ============================================================
+   RODAPÉ DESENVOLVEDOR
+   ============================================================ */
+.dev-footer {
+    text-align: center;
+    padding: 1.2rem 0 0.5rem;
+    border-top: 1px solid rgba(201, 168, 76, 0.15);
+}
+
+.dev-footer p {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.78rem;
+    color: var(--cream-dim);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.dev-footer a {
+    color: var(--gold-light);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+.dev-footer a:hover {
+    color: var(--gold-pale);
+    text-shadow: 0 0 10px rgba(201, 168, 76, 0.5);
+}
+
+/* ============================================================
    RESPONSIVO
    ============================================================ */
 @media (max-width: 500px) {
